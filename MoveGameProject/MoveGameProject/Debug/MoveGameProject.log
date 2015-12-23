@@ -1,0 +1,46 @@
+﻿빌드 시작: 2015-04-08 오후 1:16:11
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\MoveGameProject\MoveGameProject\MoveGameProject.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "소스1.cpp"
+         소스1.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(349): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(346) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(456): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(446) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(464): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(446) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(501): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(491) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(509): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(491) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(550): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(540) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(558): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(540) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(668): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(620) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(670): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(620) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(672): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(620) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(675): warning C4258: 'i' : for 루프의 정의가 무시되고 바깥쪽 범위의 정의가 사용됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(620) : 'i' 정의가 무시됩니다.
+                 d:\★작업중\★c,c++\윈도우프로그래밍\movegameproject\movegameproject\소스1.cpp(109) : 'i' 정의가 사용됩니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\MoveGameProject\Debug\MoveGameProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\MoveGameProject\Debug\MoveGameProject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\MoveGameProject\Debug\MoveGameProject.lib" /MACHINE:X86 "Debug\소스1.obj"
+         MoveGameProject.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\MoveGameProject\Debug\MoveGameProject.exe
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\MoveGameProject\MoveGameProject\MoveGameProject.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:12.55

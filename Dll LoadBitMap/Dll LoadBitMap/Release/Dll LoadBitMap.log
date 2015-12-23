@@ -1,0 +1,22 @@
+﻿빌드 시작: 2013-06-05 오후 2:52:43
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\Dll LoadBitMap\Dll LoadBitMap\Dll LoadBitMap.vcxproj" 프로젝트(Build 대상)입니다.
+     1>PrepareForBuild:
+         "D:\★작업중\★C,C++\윈도우프로그래밍\Dll LoadBitMap\Release\" 디렉터리를 만들고 있습니다.
+       InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Release\Dll LoadBitMap.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "소스.cpp"
+         소스.cpp
+     1>소스.cpp(7): error C2731: 'WinMain' : 함수를 오버로드할 수 없습니다.
+                 소스.cpp(6) : 'WinMain' 선언을 참조하십시오.
+     1>소스.cpp(21): error C2440: '=' : 'const char [18]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>소스.cpp(23): error C2664: 'CreateWindowExW' : 매개 변수 2을(를) 'const char [18]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>소스.cpp(59): error C2664: 'LoadLibraryW' : 매개 변수 1을(를) 'const char [12]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\Dll LoadBitMap\Dll LoadBitMap\Dll LoadBitMap.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.59

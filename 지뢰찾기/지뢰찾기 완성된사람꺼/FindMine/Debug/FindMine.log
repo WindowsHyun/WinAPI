@@ -1,0 +1,22 @@
+﻿빌드 시작: 2013-05-29 오후 5:11:43
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\지뢰찾기 완성된사람꺼\FindMine\FindMine.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\FindMine.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FindMine.cpp
+         FindMine.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\FindMine.res" FindMine.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\지뢰찾기 완성된사람꺼\Debug\FindMine.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\지뢰찾기 완성된사람꺼\Debug\FindMine.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\지뢰찾기 완성된사람꺼\Debug\FindMine.lib" /MACHINE:X86 /SAFESEH Debug\FindMine.res
+         Debug\FindMine.obj
+     1>FindMine.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+         FindMine.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\지뢰찾기 완성된사람꺼\Debug\FindMine.exe
+       FinalizeBuildStatus:
+         "Debug\FindMine.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\FindMine.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\지뢰찾기 완성된사람꺼\FindMine\FindMine.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.72

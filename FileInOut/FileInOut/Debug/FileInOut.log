@@ -1,0 +1,32 @@
+﻿빌드 시작: 2013-07-13 오전 12:08:24
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\FileInOut\FileInOut\FileInOut.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\FileInOut.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Work.cpp
+         Work.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\fileinout\fileinout\work.cpp(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\fileinout\fileinout\work.cpp(100): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\fileinout\fileinout\work.cpp(102): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\fileinout\fileinout\work.cpp(121): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\fileinout\fileinout\work.cpp(133): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\fileinout\fileinout\work.cpp(56): warning C4101: 'dwWritten' :참조되지 않은 지역 변수입니다.
+       ResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\FileInOut\Debug\FileInOut.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\FileInOut\Debug\FileInOut.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\FileInOut\Debug\FileInOut.lib" /MACHINE:X86 Debug\FileInOut.res
+         Debug\Work.obj
+         FileInOut.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\FileInOut\Debug\FileInOut.exe
+       FinalizeBuildStatus:
+         "Debug\FileInOut.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\FileInOut.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\FileInOut\FileInOut\FileInOut.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.21

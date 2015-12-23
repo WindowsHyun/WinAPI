@@ -1,0 +1,117 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Game(&G)"
+    BEGIN
+        MENUITEM "New Game(&N)",                ID_GAME_NEWGAME
+        MENUITEM "Exit(&x)",                    ID_GAME_EXIT
+    END
+    POPUP "Mode(&M)"
+    BEGIN
+        MENUITEM "Easy(&E)",                    ID_MODE_EASY
+        MENUITEM "Normal(&N)",                  ID_MODE_MIDDLE
+        MENUITEM "Hard(&H)",                    ID_MODE_HARD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MINE                BITMAP                  "mine.bmp"
+IDB_MINE1               BITMAP                  "mine1.bmp"
+IDB_MINE2               BITMAP                  "mine2.bmp"
+IDB_MINE3               BITMAP                  "mine3.bmp"
+IDB_MINE4               BITMAP                  "mine4.bmp"
+IDB_MINE5               BITMAP                  "mine5.bmp"
+IDB_MINE6               BITMAP                  "mine6.bmp"
+IDB_MINE7               BITMAP                  "mine7.bmp"
+IDB_MINE8               BITMAP                  "mine8.bmp"
+IDB_CLOSE               BITMAP                  "tile_close.bmp"
+IDB_FLAG                BITMAP                  "tile_flag.bmp"
+IDB_QUESTION            BITMAP                  "tile_question.bmp"
+IDB_MINE0               BITMAP                  "mine0.bmp"
+IDB_NUMBER0             BITMAP                  "0.bmp"
+IDB_NUMBER1             BITMAP                  "1.bmp"
+IDB_NUMBER2             BITMAP                  "2.bmp"
+IDB_NUMBER3             BITMAP                  "3.bmp"
+IDB_NUMBER4             BITMAP                  "4.bmp"
+IDB_NUMBER5             BITMAP                  "5.bmp"
+IDB_NUMBER6             BITMAP                  "6.bmp"
+IDB_NUMBER7             BITMAP                  "7.bmp"
+IDB_NUMBER8             BITMAP                  "8.bmp"
+IDB_NUMBER9             BITMAP                  "9.bmp"
+IDB_BOMB_MINE           BITMAP                  "bomb_mine.bmp"
+IDB_FAIL_FLAG           BITMAP                  "failFlag.bmp"
+IDB_BOMB_QUESTION       BITMAP                  "bomb_question.bmp"
+IDB_MINUS               BITMAP                  "minus.bmp"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

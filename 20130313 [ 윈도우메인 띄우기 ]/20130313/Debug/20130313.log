@@ -1,0 +1,23 @@
+﻿빌드 시작: 2015-04-28 오후 5:06:37
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\20130313.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "소스4.cpp"
+         소스4.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(311): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(337): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(362): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(484): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(489): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(494): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(519): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(523): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(527): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\소스4.cpp(573): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\Debug\20130313.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\Debug\20130313.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\Debug\20130313.lib" /MACHINE:X86 "Debug\소스4.obj"
+         20130313.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\Debug\20130313.exe
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\20130313 [ 윈도우메인 띄우기 ]\20130313\20130313.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.89

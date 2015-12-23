@@ -1,0 +1,18 @@
+﻿빌드 시작: 2013-07-23 오후 7:21:19
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\공용대화상자\CopyPaste\CopyPaste.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\CopyPaste.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Work.cpp
+         Work.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\공용대화상자\copypaste\work.cpp(401): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\공용대화상자\copypaste\work.cpp(470): error C2043: break가 잘못되었습니다.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\공용대화상자\copypaste\work.cpp(472): error C2059: 구문 오류 : 'return'
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\공용대화상자\copypaste\work.cpp(473): error C2059: 구문 오류 : '}'
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\공용대화상자\copypaste\work.cpp(473): error C2143: 구문 오류 : ';'이(가) '}' 앞에 없습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\공용대화상자\CopyPaste\CopyPaste.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:01.77

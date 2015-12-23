@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="[130430]TermProject.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="bitmap2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitLeft0.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitLeft1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitLeft2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitRight0.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitRight1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitRight2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Play.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Multi-play.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Exit.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Cloud.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ExitMouseMove.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Multi-playMousMove.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="PlayMouseMove.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Pause.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="CloudBlack.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="GameOver.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="0.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="3.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="4.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="5.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="6.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="7.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="8.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="9.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Score.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="CloudTransparent.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="TotalTime.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="점.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="초.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Restart.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RestartMouseMvoe.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Menu.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MenuMouseMove.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="CloudOrange.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="CloudRed.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskCloud.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskCloudTransparent.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitLeft0.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitLeft1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitLeft2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitRight0.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitRight1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitRight2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Number.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskScore.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskTotalTime.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Mask점.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Mask초.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskPause.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="RabbitHighJump.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MaskRabbitHighJump.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="PlayUser1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="PlayUser2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Continue.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ContinueMouseMove.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="CloudPurple.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MenuMaskCloud.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="BigMaskCloud.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Help.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="HelpCloud.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="HelpMouseMoveCloud.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="PauseMenu.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="JumpSound.wav">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="GameOver.wav">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="rocket.wav">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="wave4.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="wave5.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="wave6.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

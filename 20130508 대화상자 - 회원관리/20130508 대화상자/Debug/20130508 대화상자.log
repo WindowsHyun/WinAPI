@@ -1,0 +1,32 @@
+﻿빌드 시작: 2013-05-20 오후 2:53:38
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\20130508 대화상자\20130508 대화상자.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\20130508 대화상자.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "소스.cpp"
+         소스.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\20130508 대화상자 - 회원관리\20130508 대화상자\소스.cpp(84): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Debug\20130508 대화상자.res" "20130508 대화상자.rc" 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\20130508 대화상자.exe.embed.manifest.res" "Debug\20130508 대화상자_manifest.rc" 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\20130508 대화상자.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.lib" /MACHINE:X86 "Debug\20130508 대화상자.res"
+         "Debug\20130508 대화상자.exe.embed.manifest.res"
+         "Debug\소스.obj"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\20130508 대화상자.exe.embed.manifest" /manifest "Debug\20130508 대화상자.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\20130508 대화상자.exe.embed.manifest.res" "Debug\20130508 대화상자_manifest.rc" 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\20130508 대화상자.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.lib" /MACHINE:X86 "Debug\20130508 대화상자.res"
+         "Debug\20130508 대화상자.exe.embed.manifest.res"
+         "Debug\소스.obj"
+         20130508 대화상자.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\Debug\20130508 대화상자.exe
+       FinalizeBuildStatus:
+         "Debug\20130508 대화상자.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\20130508 대화상자.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\20130508 대화상자 - 회원관리\20130508 대화상자\20130508 대화상자.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.63

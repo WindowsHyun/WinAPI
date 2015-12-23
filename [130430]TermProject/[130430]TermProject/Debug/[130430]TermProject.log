@@ -1,0 +1,39 @@
+﻿빌드 시작: 2013-06-07 오후 10:34:10
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\[130430]TermProject\[130430]TermProject\[130430]TermProject.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\[130430]TermProject.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\[130430]termproject\[130430]termproject\main.cpp(19): warning C4005: 'WINVER' : 매크로 재정의
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdkddkver.h(212) : 'WINVER'의 이전 정의를 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\[130430]termproject\[130430]termproject\main.cpp(20): warning C4005: '_WIN32_WINNT' : 매크로 재정의
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdkddkver.h(197) : '_WIN32_WINNT'의 이전 정의를 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\[130430]termproject\[130430]termproject\main.cpp(1432): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\[130430]termproject\[130430]termproject\main.cpp(1438): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\[130430]termproject\[130430]termproject\main.cpp(1440): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
+       ResourceCompile:
+         모든 출력이 최신 상태입니다.
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\[130430]TermProject\Debug\[130430]TermProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\[130430]TermProject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\[130430]TermProject\Debug\[130430]TermProject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\[130430]TermProject\Debug\[130430]TermProject.lib" /MACHINE:X86 "Debug\[130430]TermProject.res"
+         "Debug\[130430]TermProject.exe.embed.manifest.res"
+         Debug\Main.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\[130430]TermProject.exe.embed.manifest" /manifest "Debug\[130430]TermProject.exe.intermediate.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         [130430]TermProject.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\[130430]TermProject\Debug\[130430]TermProject.exe
+       FinalizeBuildStatus:
+         "Debug\[130430]TermProject.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\[130430]TermProject.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\[130430]TermProject\[130430]TermProject\[130430]TermProject.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.27

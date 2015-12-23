@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emd", "emd\emd.vcxproj", "{E78FEE85-7992-4965-BE4A-D84F70E73447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E78FEE85-7992-4965-BE4A-D84F70E73447}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E78FEE85-7992-4965-BE4A-D84F70E73447}.Debug|Win32.Build.0 = Debug|Win32
+		{E78FEE85-7992-4965-BE4A-D84F70E73447}.Release|Win32.ActiveCfg = Release|Win32
+		{E78FEE85-7992-4965-BE4A-D84F70E73447}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

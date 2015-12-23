@@ -1,0 +1,18 @@
+﻿빌드 시작: 2013-06-05 오후 2:33:47
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\DllMake\DllMake\DllMake.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Release\DllMake.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\DllMake\Release\DllMake.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\DllMake\Release\DllMake.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\DllMake\Release\DllMake.lib" /MACHINE:X86 /SAFESEH /NOENTRY /DLL Release\DllMake.res
+         LINK : /LTCG를 지정했지만 코드를 생성할 필요가 없습니다. 명령줄에서 /LTCG를 제거하면 링커 성능이 향상됩니다.
+         DllMake.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\DllMake\Release\DllMake.dll
+       FinalizeBuildStatus:
+         "Release\DllMake.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Release\DllMake.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\DllMake\DllMake\DllMake.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.57

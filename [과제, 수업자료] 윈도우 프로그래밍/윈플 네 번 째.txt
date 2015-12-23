@@ -1,0 +1,751 @@
+[연습문제 3-1]
+
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam);
+
+LPCTSTR lpszClass = "Window Class";
+HINSTANCE g_hInst;
+
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCmdLine, int nCmdShow )
+{
+	HWND  hwnd;
+	MSG   msg;
+	WNDCLASS WndClass;
+
+	WndClass.style = CS_HREDRAW | CS_VREDRAW;
+	WndClass.lpfnWndProc = WndProc;
+	WndClass.cbClsExtra = 0;
+	WndClass.cbWndExtra = 0;
+	WndClass.hInstance = hInstance;
+	WndClass.hIcon = LoadIcon( NULL, IDI_APPLICATION );
+	WndClass.hCursor = LoadCursor( NULL, IDC_ARROW );
+	WndClass.hbrBackground = ( HBRUSH )GetStockObject( WHITE_BRUSH );
+	WndClass.lpszMenuName = NULL;
+	WndClass.lpszClassName = "my first window program";
+	RegisterClass(&WndClass);
+
+	hwnd = CreateWindow( "my first window program",
+		"Window Title Name",
+		WS_OVERLAPPEDWINDOW,
+		0,
+		0,
+		800,
+		600,
+		NULL,
+		NULL,
+		hInstance,
+		NULL
+		);
+	ShowWindow( hwnd, nCmdShow );
+	UpdateWindow( hwnd );
+
+	while( GetMessage( &msg, NULL, 0, 0 ) ) {
+		TranslateMessage( &msg );
+		DispatchMessage( &msg );
+	}
+
+	return msg.wParam;
+}
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg,
+	WPARAM wParam, LPARAM lParam )
+{
+	HDC hdc;
+	PAINTSTRUCT ps;
+	static int x, y;
+	static RECT rectView;
+	static int cnt ,temp;
+	static BOOL go;
+
+	switch( iMsg )
+	{
+	case WM_CREATE :
+		GetClientRect( hwnd, &rectView );
+		x = 20, y = 20;
+		temp = 1; // 처음에 1을 주고 시작하면 자동으로 오른쪽
+		go = FALSE;
+		break;
+
+	case WM_KEYDOWN :
+		if( wParam == VK_RETURN ) {
+			if( go == FALSE ) {
+				go = TRUE;
+				SetTimer( hwnd, temp, 70, NULL );
+			} else {
+				go = FALSE;
+				for( int i = 1; i<5; ++ i )
+					KillTimer( hwnd, i );
+			}		
+		}
+
+		if( go == TRUE ) {
+			if( wParam == VK_UP ) {
+				SetTimer( hwnd, 2, 70, NULL );
+				KillTimer( hwnd, 1 );
+				KillTimer( hwnd, 3 );
+				KillTimer( hwnd, 4 );
+				temp = 2;
+				break;
+			} else if( wParam == VK_DOWN ) {
+				SetTimer( hwnd, 3, 70, NULL );
+				KillTimer( hwnd, 1 );
+				KillTimer( hwnd, 2 );
+				KillTimer( hwnd, 4 );
+				temp = 3;
+				break;
+			} else if( wParam == VK_LEFT ) {
+				SetTimer( hwnd, 4, 70, NULL );
+				KillTimer( hwnd, 1 );
+				KillTimer( hwnd, 2 );
+				KillTimer( hwnd, 3 );
+				temp = 4;
+				break;
+			} else if( wParam == VK_RIGHT ) {
+				SetTimer( hwnd, 1, 70, NULL );
+				KillTimer( hwnd, 2 );
+				KillTimer( hwnd, 3 );
+				KillTimer( hwnd, 4 );
+				temp = 1;
+				break;
+			}
+		}
+		InvalidateRgn( hwnd, NULL, TRUE );
+		break;
+
+	case WM_TIMER :
+		switch ( wParam )
+		{
+		case 1 :
+			x += 40;
+			if( x + 20 > rectView.right ) x -= 40;
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 2 :
+			y -= 40;
+			if( y - 20 < rectView.top ) y += 40;
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 3 :
+			y += 40;
+			if( y + 20 > rectView.bottom ) y -= 40;
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 4 :
+			x -= 40;
+			if( x - 20 < rectView.left ) x += 40;
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		}
+
+	case WM_KEYUP : 
+		break;
+
+	case WM_CHAR :
+		break;
+
+	case WM_PAINT :
+		hdc = BeginPaint( hwnd, &ps );
+		Ellipse( hdc, x-20, y-20, x+20, y+20 );
+
+		EndPaint( hwnd, &ps );
+		break;
+
+	case WM_DESTROY :
+		KillTimer( hwnd, 1 );
+		KillTimer( hwnd, 2 );
+		KillTimer( hwnd, 3 );
+		KillTimer( hwnd, 4 );
+		PostQuitMessage( 0 );
+		break;
+	}
+
+	return ( DefWindowProc(hwnd, iMsg, wParam, lParam) );
+}
+
+
+[연습문제 3-2]
+
+
+
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam);
+
+LPCTSTR lpszClass = "Window Class";
+HINSTANCE g_hInst;
+
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCmdLine, int nCmdShow )
+{
+	HWND  hwnd;
+	MSG   msg;
+	WNDCLASS WndClass;
+
+	WndClass.style = CS_HREDRAW | CS_VREDRAW;
+	WndClass.lpfnWndProc = WndProc;
+	WndClass.cbClsExtra = 0;
+	WndClass.cbWndExtra = 0;
+	WndClass.hInstance = hInstance;
+	WndClass.hIcon = LoadIcon( NULL, IDI_APPLICATION );
+	WndClass.hCursor = LoadCursor( NULL, IDC_ARROW );
+	WndClass.hbrBackground = ( HBRUSH )GetStockObject( WHITE_BRUSH );
+	WndClass.lpszMenuName = NULL;
+	WndClass.lpszClassName = "my first window program";
+	RegisterClass(&WndClass);
+
+	hwnd = CreateWindow( "my first window program",
+		"Window Title Name",
+		WS_OVERLAPPEDWINDOW,
+		0,
+		0,
+		800,
+		600,
+		NULL,
+		NULL,
+		hInstance,
+		NULL
+		);
+	ShowWindow( hwnd, nCmdShow );
+	UpdateWindow( hwnd );
+
+	while( GetMessage( &msg, NULL, 0, 0 ) ) {
+		TranslateMessage( &msg );
+		DispatchMessage( &msg );
+	}
+
+	return msg.wParam;
+}
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg,
+						 WPARAM wParam, LPARAM lParam )
+{
+	HDC hdc;
+	PAINTSTRUCT ps;
+	static int x, y, speed;
+	static int x2;
+	static RECT rectView;
+	static BOOL turn;
+	HBRUSH hBrush, oldBrush;
+
+	switch( iMsg )
+	{
+	case WM_CREATE :
+		GetClientRect( hwnd, &rectView );
+		x = 60, y = 20, speed = 70;
+		x2 = 20;
+		turn = FALSE;
+		break;
+
+	case WM_KEYDOWN :
+		if( wParam == VK_RETURN )
+			SetTimer( hwnd, 1, speed, NULL );
+
+	case WM_KEYUP : 
+		break;
+
+	case WM_CHAR :
+		if( wParam == '=' ) {
+			KillTimer( hwnd, 1 );
+			speed -=20;
+			SetTimer( hwnd, 1, speed, NULL );
+		}
+		else if( wParam == '-' ) {
+			KillTimer( hwnd, 1 );
+			speed += 20;
+			SetTimer( hwnd, 1, speed, NULL );
+		}
+		break;
+
+	case WM_TIMER :
+		switch ( wParam )
+		{
+		case 1 :
+			x2=x;
+			if( turn == FALSE ) {
+				x += 40;
+				if( x + 20 > rectView.right ) {
+					x -= 40;
+					y += 40;
+					turn = TRUE;
+				}
+			} else if( turn = TRUE ) {
+				x -= 40;
+				if( x - 20 < rectView.left ) {
+					x += 40;
+					y += 40;
+					turn = FALSE;
+				}
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+		}
+
+	case WM_PAINT :
+		hdc =BeginPaint(hwnd, &ps);
+		hBrush = CreateSolidBrush(RGB(0,0,255));
+		oldBrush = (HBRUSH)SelectObject(hdc,hBrush);
+		Ellipse( hdc, x-20, y-20, x+20, y+20 );
+		SelectObject(hdc,oldBrush);
+		DeleteObject(hBrush);
+
+		hBrush = CreateSolidBrush(RGB(0,255,0));
+		oldBrush = (HBRUSH)SelectObject(hdc,hBrush);
+		Ellipse( hdc, x2-20, y-20, x2+20, y+20 );
+		SelectObject(hdc,oldBrush);
+		DeleteObject(hBrush);
+
+		EndPaint( hwnd, &ps );
+		break;
+
+	case WM_DESTROY :
+		KillTimer( hwnd, 1 );
+		PostQuitMessage( 0 );
+		break;
+	}
+
+	return ( DefWindowProc(hwnd, iMsg, wParam, lParam) );
+}
+
+
+
+
+[연습문제 3-3]
+
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam);
+
+LPCTSTR lpszClass = "Window Class";
+HINSTANCE g_hInst;
+
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCmdLine, int nCmdShow )
+{
+	HWND  hwnd;
+	MSG   msg;
+	WNDCLASS WndClass;
+
+	WndClass.style = CS_HREDRAW | CS_VREDRAW;
+	WndClass.lpfnWndProc = WndProc;
+	WndClass.cbClsExtra = 0;
+	WndClass.cbWndExtra = 0;
+	WndClass.hInstance = hInstance;
+	WndClass.hIcon = LoadIcon( NULL, IDI_APPLICATION );
+	WndClass.hCursor = LoadCursor( NULL, IDC_ARROW );
+	WndClass.hbrBackground = ( HBRUSH )GetStockObject( WHITE_BRUSH );
+	WndClass.lpszMenuName = NULL;
+	WndClass.lpszClassName = "my first window program";
+	RegisterClass(&WndClass);
+
+	hwnd = CreateWindow( "my first window program",
+		"Window Title Name",
+		WS_OVERLAPPEDWINDOW,
+		0,
+		0,
+		800,
+		600,
+		NULL,
+		NULL,
+		hInstance,
+		NULL
+		);
+	ShowWindow( hwnd, nCmdShow );
+	UpdateWindow( hwnd );
+
+	while( GetMessage( &msg, NULL, 0, 0 ) ) {
+		TranslateMessage( &msg );
+		DispatchMessage( &msg );
+	}
+
+	return msg.wParam;
+}
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg,
+						 WPARAM wParam, LPARAM lParam )
+{
+	HDC hdc;
+	PAINTSTRUCT ps;
+	static int x, y, x2, y2;
+	static RECT rectView;
+	static int temp, speed;
+	static BOOL go, upDown;
+	HBRUSH hBrush, oldBrush;
+
+	switch( iMsg )
+	{
+	case WM_CREATE :
+		GetClientRect( hwnd, &rectView );
+		x = 60, y = 20, x2 = 20, y2 = 20;
+		temp = 1; // 처음에 1을 주고 시작하면 자동으로 오른쪽
+		speed = 70;
+		go = upDown = FALSE;
+		break;
+
+	case WM_KEYDOWN :
+		if( wParam == VK_RETURN ) {
+			if( go == FALSE ) {
+				go = TRUE;
+				upDown = FALSE;
+				SetTimer( hwnd, temp, speed, NULL );
+			} else {
+				go = FALSE;
+				upDown = FALSE;
+				for( int i = 1; i<5; ++ i )
+					KillTimer( hwnd, i );
+			}		
+		}
+
+		if( go == TRUE ) {
+			if( wParam == VK_UP ) {
+				SetTimer( hwnd, 2, speed, NULL );
+				KillTimer( hwnd, 1 );
+				KillTimer( hwnd, 3 );
+				KillTimer( hwnd, 4 );
+				temp = 2;
+				upDown = TRUE;
+				break;
+			} else if( wParam == VK_DOWN ) {
+				SetTimer( hwnd, 3, speed, NULL );
+				KillTimer( hwnd, 1 );
+				KillTimer( hwnd, 2 );
+				KillTimer( hwnd, 4 );
+				temp = 3;
+				upDown = TRUE;
+				break;
+			} else if( wParam == VK_LEFT ) {
+				SetTimer( hwnd, 4, speed, NULL );
+				KillTimer( hwnd, 1 );
+				KillTimer( hwnd, 2 );
+				KillTimer( hwnd, 3 );
+				temp = 4;
+				upDown = FALSE;
+				break;
+			} else if( wParam == VK_RIGHT ) {
+				SetTimer( hwnd, 1, speed, NULL );
+				KillTimer( hwnd, 2 );
+				KillTimer( hwnd, 3 );
+				KillTimer( hwnd, 4 );
+				temp = 1;
+				upDown = FALSE;
+				break;
+			} else if( wParam == VK_SPACE ) {
+				for( int i = 1; i<5; ++i )
+					KillTimer( hwnd, i );
+				if( upDown == TRUE ) {
+					x -= 50;
+					x2 -= 50;
+				} else {
+					y -= 50;
+					y2 -= 50;
+				}
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+	case WM_KEYUP :
+		if ( wParam == VK_SPACE ) {
+			if( upDown == TRUE ) {
+				x += 50;
+				x2 += 50;
+			} else {
+				y += 50;
+				y2 += 50;
+			}
+			SetTimer( hwnd, temp, speed, NULL );
+		}
+		break;
+
+	case WM_CHAR :	
+		if( wParam == '=' ) {
+			KillTimer( hwnd, temp );
+			speed -=20;
+			SetTimer( hwnd, temp, speed, NULL );
+		}
+		else if( wParam == '-' ) {
+			KillTimer( hwnd, temp );
+			speed += 20;
+			SetTimer( hwnd, temp, speed, NULL );
+		}
+		break;
+
+	case WM_TIMER :
+		switch ( wParam )
+		{
+		case 1 :
+			x2 = x;
+			y2 = y;
+			x += 40;
+			if( x + 20 > rectView.right ) {
+				KillTimer( hwnd, 1 );
+				SetTimer( hwnd, 4, speed, NULL );
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 2 :
+			x2 = x;
+			y2 = y;
+			y -= 40;
+			if( y - 20 < rectView.top )  {
+				KillTimer( hwnd, 2 );
+				SetTimer( hwnd, 3, speed, NULL );
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 3 :
+			x2 = x;
+			y2 = y;
+			y += 40;
+			if( y + 20 > rectView.bottom )  {
+				KillTimer( hwnd, 3 );
+				SetTimer( hwnd, 2, speed, NULL );
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 4 :
+			x2 = x;
+			y2 = y;
+			x -= 40;
+			if( x - 20 < rectView.left )  {
+				KillTimer( hwnd, 4 );
+				SetTimer( hwnd, 1, speed, NULL );
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+		}
+
+	case WM_PAINT :
+		hdc = BeginPaint( hwnd, &ps );
+		hBrush = CreateSolidBrush(RGB(255,0,0));
+		oldBrush = (HBRUSH)SelectObject(hdc,hBrush);
+		Ellipse( hdc, x-20, y-20, x+20, y+20 );
+		SelectObject(hdc,oldBrush);
+		DeleteObject(hBrush);
+
+
+		hBrush = CreateSolidBrush(RGB(0,0,255));
+		oldBrush = (HBRUSH)SelectObject(hdc,hBrush);
+		Ellipse( hdc, x2-20, y2-20, x2+20, y2+20 );
+		SelectObject(hdc,oldBrush);
+		DeleteObject(hBrush);
+
+
+
+
+		EndPaint( hwnd, &ps );
+		break;
+
+	case WM_DESTROY :
+		KillTimer( hwnd, 1 );
+		KillTimer( hwnd, 2 );
+		KillTimer( hwnd, 3 );
+		KillTimer( hwnd, 4 );
+		PostQuitMessage( 0 );
+		break;
+		}
+	}
+
+	return ( DefWindowProc(hwnd, iMsg, wParam, lParam) );
+}
+
+
+[연습문제 3-4]
+
+
+
+
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam);
+
+LPCTSTR lpszClass = "Window Class";
+HINSTANCE g_hInst;
+
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCmdLine, int nCmdShow )
+{
+	HWND  hwnd;
+	MSG   msg;
+	WNDCLASS WndClass;
+
+	WndClass.style = CS_HREDRAW | CS_VREDRAW;
+	WndClass.lpfnWndProc = WndProc;
+	WndClass.cbClsExtra = 0;
+	WndClass.cbWndExtra = 0;
+	WndClass.hInstance = hInstance;
+	WndClass.hIcon = LoadIcon( NULL, IDI_APPLICATION );
+	WndClass.hCursor = LoadCursor( NULL, IDC_ARROW );
+	WndClass.hbrBackground = ( HBRUSH )GetStockObject( WHITE_BRUSH );
+	WndClass.lpszMenuName = NULL;
+	WndClass.lpszClassName = "my first window program";
+	RegisterClass(&WndClass);
+
+	hwnd = CreateWindow( "my first window program",
+		"Window Title Name",
+		WS_OVERLAPPEDWINDOW,
+		0,
+		0,
+		800,
+		600,
+		NULL,
+		NULL,
+		hInstance,
+		NULL
+		);
+	ShowWindow( hwnd, nCmdShow );
+	UpdateWindow( hwnd );
+
+	while( GetMessage( &msg, NULL, 0, 0 ) ) {
+		TranslateMessage( &msg );
+		DispatchMessage( &msg );
+	}
+
+	return msg.wParam;
+}
+
+LRESULT CALLBACK WndProc( HWND hwnd, UINT iMsg,
+	WPARAM wParam, LPARAM lParam )
+{
+	HDC hdc;
+	PAINTSTRUCT ps;
+	static RECT rectView; // 윈도우 창
+	static RECT firstR1, firstR2; // 첫 번째 줄 상자
+	static RECT seconR1, seconR2; // 두
+	static RECT thirdR1, thirdR2; // 세
+	static int fX1, fY1, fX2, fY2;
+	static int sX1, sY1, sX2, sY2;
+	static int tX1, tY1, tX2, tY2; // 각 좌표들
+	static int temp1, temp2, temp3; // 두 번째 상자 움직이게 카운트
+	static BOOL turn1, turn2, turn3; // 첫 번째 상자, 두 번째 상자 번 갈아 가는 거 카운트
+
+	switch( iMsg )
+	{
+	case WM_CREATE :
+		GetClientRect( hwnd, &rectView );
+		fX1 = 40, fY1 = 20; fX2 = -80, fY2 = 20;
+		sX1 = 600, sY1 = 300, sX2 = 800, sY2 = 300;
+		tX1 = 0, tY1 = 450, tX2 = -100, tY2 = 450;
+		temp1 = 0; turn1 = turn2 = turn3 = FALSE;
+		SetTimer( hwnd, 1, 150, NULL );
+		SetTimer( hwnd, 2, 200, NULL );
+		SetTimer( hwnd, 3, 70, NULL );
+		break;
+
+	case WM_KEYDOWN :
+		break;
+
+	case WM_TIMER :
+		switch ( wParam )
+		{
+		case 1 : //fX1 = 40, fY1 = 20; fX2 = -80, fY2 = 20;
+			if( turn1 == FALSE ) {
+				fX1 += 40;
+				if( temp1 > 0 ) // 처음에는 계속 화면 밖에 있다가 템프값을 받으면 
+					fX2 += 40; // 두 번째 상자가 계속 움직이게 됩니다아
+				if( fX1 + 80 > rectView.right ) {
+					fX2 = -80, fY2 = 20;
+					turn1 = TRUE;
+				}
+			} else if( turn1 == TRUE ) {
+				fX1 += 40;
+				fX2 += 40;
+				if( fX2 + 80 > rectView.right ) {
+					fX1 = -100, fY1 = 20; // -100을 줘야 화면 밖에서 시작
+					turn1 = FALSE;
+					++temp1;
+				}
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 2 : //sX1 = 600, sY1 = 300, sX2 = 800, sY2 = 300;
+			if( turn2 == FALSE ) {
+				sX1 -= 40;
+				if( temp2 > 0 )
+					sX2 -= 40;
+				if( sX1 < rectView.left ) {
+					sX2 = 800, sY2 = 300;
+					turn2 = TRUE;
+				}
+			} else if( turn2 == TRUE ) {
+				sX1 -= 40;
+				sX2 -= 40;
+				if( sX2 < rectView.left ) {
+					sX1 = 800, sY1 = 300;
+					turn2 = FALSE;
+					++temp2;
+				}
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		case 3 : //tX1 = 0, tY1 = 450, tX2 = -100, tY2 = 450;
+			if( turn3 == FALSE ) {
+				tX1 += 40;
+				if( temp3 > 0 )  
+					tX2 += 40;
+				if( tX1 + 80 > rectView.right ) {
+					tX2 = -100, tY2 = 450;
+					turn3 = TRUE;
+				}
+			} else if( turn3 == TRUE ) {
+				tX1 += 40;
+				tX2 += 40;
+				if( tX2 + 80 > rectView.right ) {
+					tX1 = -100, tY1 = 450;
+					turn3 = FALSE;
+					++temp3;
+				}
+			}
+			InvalidateRgn( hwnd, NULL, TRUE );
+			break;
+
+		}
+
+	case WM_KEYUP : 
+		break;
+
+	case WM_CHAR :
+		break;
+
+	case WM_PAINT :
+		hdc = BeginPaint( hwnd, &ps );
+		Rectangle( hdc, fX1-20, fY1-20, fX1+80, fY1+20 ); // 처음껀 책에 있는 그대로 쳐서 좌표가 괜히 복잡
+		Rectangle( hdc, fX2-20, fY2-20, fX2+80, fY2+20 ); // 여기까지 첫 번째 줄 상자
+
+		Rectangle( hdc, sX1, sY1, sX1+200, sY1+100 ); // 두 번째부턴 내 좌표지렁
+		Rectangle( hdc, sX2, sY2, sX2+200, sY2+100 );
+
+		Rectangle( hdc, tX1, tY1, tX1+100, tY1+100 );
+		Rectangle( hdc, tX2, tY2, tX2+100, tY2+100 );
+
+
+		EndPaint( hwnd, &ps );
+		break;
+
+	case WM_DESTROY :
+		KillTimer( hwnd, 1 );
+		KillTimer( hwnd, 2 );
+		KillTimer( hwnd, 3 );
+		PostQuitMessage( 0 );
+		break;
+	}
+
+	return ( DefWindowProc(hwnd, iMsg, wParam, lParam) );
+}

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74A182DB-38EE-4E94-AC71-2DE31813C692}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My130430TermProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="[130430]TermProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="0.bmp" />
+    <None Include="1.bmp" />
+    <None Include="2.bmp" />
+    <None Include="3.bmp" />
+    <None Include="4.bmp" />
+    <None Include="5.bmp" />
+    <None Include="6.bmp" />
+    <None Include="7.bmp" />
+    <None Include="8.bmp" />
+    <None Include="9.bmp" />
+    <None Include="BigMaskCloud.bmp" />
+    <None Include="bitmap1.bmp" />
+    <None Include="bitmap2.bmp" />
+    <None Include="Cloud.bmp" />
+    <None Include="CloudBlack.bmp" />
+    <None Include="CloudOrange.bmp" />
+    <None Include="CloudPurple.bmp" />
+    <None Include="CloudRed.bmp" />
+    <None Include="CloudTransparent.bmp" />
+    <None Include="Continue.bmp" />
+    <None Include="ContinueMouseMove.bmp" />
+    <None Include="Exit.bmp" />
+    <None Include="ExitMouseMove.bmp" />
+    <None Include="GameOver.bmp" />
+    <None Include="GameOver.wav" />
+    <None Include="Help.bmp" />
+    <None Include="HelpCloud.bmp" />
+    <None Include="HelpMouseMoveCloud.bmp" />
+    <None Include="icon1.ico" />
+    <None Include="JumpSound.wav" />
+    <None Include="MaskCloud.bmp" />
+    <None Include="MaskCloudTransparent.bmp" />
+    <None Include="MaskPause.bmp" />
+    <None Include="MaskRabbitHighJump.bmp" />
+    <None Include="MaskRabbitLeft0.bmp" />
+    <None Include="MaskRabbitLeft1.bmp" />
+    <None Include="MaskRabbitLeft2.bmp" />
+    <None Include="MaskRabbitRight0.bmp" />
+    <None Include="MaskRabbitRight1.bmp" />
+    <None Include="MaskRabbitRight2.bmp" />
+    <None Include="MaskScore.bmp" />
+    <None Include="MaskTotalTime.bmp" />
+    <None Include="Mask점.bmp" />
+    <None Include="Mask초.bmp" />
+    <None Include="Menu.bmp" />
+    <None Include="MenuMaskCloud.bmp" />
+    <None Include="MenuMouseMove.bmp" />
+    <None Include="Multi-play.bmp" />
+    <None Include="Multi-playMousMove.bmp" />
+    <None Include="Number.bmp" />
+    <None Include="Pause.bmp" />
+    <None Include="PauseMenu.bmp" />
+    <None Include="Play.bmp" />
+    <None Include="PlayMouseMove.bmp" />
+    <None Include="PlayUser1.bmp" />
+    <None Include="PlayUser2.bmp" />
+    <None Include="RabbitHighJump.bmp" />
+    <None Include="RabbitLeft0.bmp" />
+    <None Include="RabbitLeft1.bmp" />
+    <None Include="RabbitLeft2.bmp" />
+    <None Include="RabbitRight0.bmp" />
+    <None Include="RabbitRight1.bmp" />
+    <None Include="RabbitRight2.bmp" />
+    <None Include="Restart.bmp" />
+    <None Include="RestartMouseMvoe.bmp" />
+    <None Include="rocket.wav" />
+    <None Include="Score.bmp" />
+    <None Include="TotalTime.bmp" />
+    <None Include="wave4.bin" />
+    <None Include="wave5.bin" />
+    <None Include="wave6.bin" />
+    <None Include="점.bmp" />
+    <None Include="초.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

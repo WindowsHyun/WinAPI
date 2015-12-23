@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "윈도우 대화상자2", "윈도우 대화상자2\윈도우 대화상자2.vcxproj", "{3DF82AB7-51CC-4F19-B103-8135EA0B5D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DF82AB7-51CC-4F19-B103-8135EA0B5D71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3DF82AB7-51CC-4F19-B103-8135EA0B5D71}.Debug|Win32.Build.0 = Debug|Win32
+		{3DF82AB7-51CC-4F19-B103-8135EA0B5D71}.Release|Win32.ActiveCfg = Release|Win32
+		{3DF82AB7-51CC-4F19-B103-8135EA0B5D71}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

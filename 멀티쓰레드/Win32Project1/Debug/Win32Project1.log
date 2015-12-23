@@ -1,0 +1,19 @@
+﻿빌드 시작: 2013-06-03 오후 3:06:26
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\멀티쓰레드\Win32Project1\Win32Project1\Win32Project1.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\Win32Project1.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Work.cpp
+         Work.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\멀티쓰레드\win32project1\win32project1\work.cpp(101): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\멀티쓰레드\Win32Project1\Debug\Win32Project1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\멀티쓰레드\Win32Project1\Debug\Win32Project1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\멀티쓰레드\Win32Project1\Debug\Win32Project1.lib" /MACHINE:X86 Debug\Work.obj
+         Win32Project1.vcxproj -> D:\★작업중\★C,C++\윈도우프로그래밍\멀티쓰레드\Win32Project1\Debug\Win32Project1.exe
+       FinalizeBuildStatus:
+         "Debug\Win32Project1.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\Win32Project1.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\멀티쓰레드\Win32Project1\Win32Project1\Win32Project1.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.11

@@ -1,0 +1,28 @@
+﻿빌드 시작: 2013-07-14 오후 11:18:48
+     1>2 노드의 "D:\★작업중\★C,C++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\비트맵이용하기.vcxproj" 프로젝트(Build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\비트맵이용하기.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "소스.cpp"
+         소스.cpp
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource1.h(6): warning C4005: 'IDR_MENU1' : 매크로 재정의
+                 d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource.h(7) : 'IDR_MENU1'의 이전 정의를 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource1.h(8): warning C4005: 'ID_SCREEN_FULLSCREEN' : 매크로 재정의
+                 d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource.h(9) : 'ID_SCREEN_FULLSCREEN'의 이전 정의를 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource1.h(9): warning C4005: 'ID_SCREEN_3' : 매크로 재정의
+                 d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource.h(10) : 'ID_SCREEN_3'의 이전 정의를 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource1.h(10): warning C4005: 'ID_SCREEN_4' : 매크로 재정의
+                 d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource.h(11) : 'ID_SCREEN_4'의 이전 정의를 참조하십시오.
+     1>d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource1.h(11): warning C4005: 'ID_SCREEN_5' : 매크로 재정의
+                 d:\★작업중\★c,c++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\resource.h(12) : 'ID_SCREEN_5'의 이전 정의를 참조하십시오.
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\비트맵이용하기.res" "비트맵이용하기.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\★작업중\★C,C++\윈도우프로그래밍\비트맵 이용+반전 하기\Debug\비트맵이용하기.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\★작업중\★C,C++\윈도우프로그래밍\비트맵 이용+반전 하기\Debug\비트맵이용하기.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\★작업중\★C,C++\윈도우프로그래밍\비트맵 이용+반전 하기\Debug\비트맵이용하기.lib" /MACHINE:X86 "Debug\비트맵이용하기.res"
+         "Debug\소스.obj"
+     1>LINK : fatal error LNK1104: 'D:\★작업중\★C,C++\윈도우프로그래밍\비트맵 이용+반전 하기\Debug\비트맵이용하기.exe' 파일을 열 수 없습니다.
+     1>"D:\★작업중\★C,C++\윈도우프로그래밍\비트맵 이용+반전 하기\비트맵이용하기\비트맵이용하기.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:01.66
